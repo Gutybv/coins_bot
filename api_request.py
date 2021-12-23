@@ -35,4 +35,4 @@ percent_1h_slp = (json.loads(response.text)['data']['SLP']['quote']['USD']['perc
 # pprint.pprint(json.loads(response.text)['data']['SLP']['quote']['USD']['price'])
 # pprint.pprint(json.loads(response.text)['data']['SLP']['quote']['USD']['percent_change_1h'])
     
-print(price_slp,percent_1h_slp)
+# print(price_slp,percent_1h_slp)
