@@ -2,7 +2,7 @@ import tweepy
 import schedule
 import os
 from dotenv import load_dotenv
-
+from api_request import slp
 
 load_dotenv() 
 # create a .env file to keep the security of yours Twitter API KEYS
@@ -13,14 +13,17 @@ ACCESS_TOKEN_SECRET = os.getenv('ACCESS_TOKEN_SECRET')
 # You can find these tokens in this link https://developer.twitter.com/en/portal/dashboard
 
 
-# Authentication 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth,wait_on_rate_limit=True)
+# Authentication 
+
+
 
 # Def to twitt
 def twitt_price():
-    api.update_status('hola mundo')
+    twitt_price = slp()
+    api.update_status(twitt_price)
 
 
 
