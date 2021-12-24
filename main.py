@@ -31,8 +31,8 @@ def twitt_price():
 
 # Use time to twitt every x hours
 def main():
-    schedule.every().hour.do(twitt_price)
-    # schedule.every(10).minutes.do(twitt_price)
+    # schedule.every().hour.do(twitt_price)
+    schedule.every(25).minutes.do(twitt_price)
     while True:
         try:
             schedule.run_pending()
