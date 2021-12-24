@@ -36,7 +36,7 @@ def main():
     while True:
         try:
             schedule.run_pending()
-            time.sleep(2)
+            time.sleep(2) 
         except tweepy.TweepError as e:
             raise e
     

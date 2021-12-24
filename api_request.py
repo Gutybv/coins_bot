@@ -47,11 +47,11 @@ def slp():
     elif percent_1h_slp > 0 and percent_7d_slp > 0: 
         return(f'The $SLP from @AxieInfinity is now at ${price_slp} \n\U0001F4C8 Is up {percent_1h_slp}% compare to 1 hour ago\n\U0001F4C8 and is up {percent_7d_slp}% compare to 1 week ago\n #BTC #ETH #SLP')
     elif percent_1h_slp < 0 and percent_7d_slp > 0: 
-        return(f'The $SLP from @AxieInfinity is now at ${price_slp} \n\U0001F4C9 Is up {percent_1h_slp}% compare to 1 hour ago\n\U0001F4C8 and is up {percent_7d_slp}% compare to 1 week ago\n #BTC #ETH #SLP')
+        return(f'The $SLP from @AxieInfinity is now at ${price_slp} \n\U0001F4C9 Is down {percent_1h_slp}% compare to 1 hour ago\n\U0001F4C8 and is up {percent_7d_slp}% compare to 1 week ago\n #BTC #ETH #SLP')
     elif percent_1h_slp > 0 and percent_7d_slp < 0:
-        return(f'The $SLP from @AxieInfinity is now at ${price_slp} \n\U0001F4C8 Is up {percent_1h_slp}% compare to 1 hour ago\n\U0001F4C9 and is up {percent_7d_slp}% compare to 1 week ago\n #BTC #ETH #SLP')
+        return(f'The $SLP from @AxieInfinity is now at ${price_slp} \n\U0001F4C8 Is up {percent_1h_slp}% compare to 1 hour ago\n\U0001F4C9 and is down {percent_7d_slp}% compare to 1 week ago\n #BTC #ETH #SLP')
     else:
-        print()
+        return(f'The $SLP from @AxieInfinity is now at ${price_slp} \nIs {percent_1h_slp}% compare at 1 hour ago\nand is {percent_7d_slp}% compare at 1 week ago\n #BTC #ETH #SLP')
    
 slp()
 
