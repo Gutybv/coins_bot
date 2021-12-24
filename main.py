@@ -3,6 +3,7 @@ import schedule
 import os
 from dotenv import load_dotenv
 from api_request import slp
+import time
 
 load_dotenv() 
 # create a .env file to keep the security of yours Twitter API KEYS
@@ -24,18 +25,21 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 def twitt_price():
     twitt_price = slp()
     api.update_status(twitt_price)
+    
 
 
 
 # Use time to twitt every x hours
 def main():
-    schedule.every.hours(3).do(twitt_price)
+    schedule.every().hour.do(twitt_price)
+    # schedule.every(10).minutes.do(twitt_price)
     while True:
         try:
             schedule.run_pending()
+            time.sleep(2)
         except tweepy.TweepError as e:
             raise e
-        
+    
 
 if __name__ == '__main__':
-    twitt_price()
+    main()
