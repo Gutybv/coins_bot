@@ -7,7 +7,7 @@ Currently this bot twitt the next parameters
 *Screenshot from my [Twitter](https://twitter.com/GamesCoinsPrice)
 
 ![Games coins twitter](tw.png)
-## Requerimientos
+## Requirements
 -  Dev account in [twitter](https://developer.twitter.com/en/portal/dashboard "twitter")
 	- CONSUMER_KEY
 	- CONSUMER_SECRET
@@ -32,17 +32,25 @@ Currently this bot twitt the next parameters
 You have 2 option, add a .env document or delete all the code that comes after = and add yours API
 
 ![Main API](api_main.png)
+
+
 or
+
+
 ![Your api](code.png)
 
 ## api_request
 And the same in api_request
 ![](api_req.png)
+
+
 You have to add your coin api from coin market cap
 
 
 ## Change at your cryto 
 ![crypto](param.png)
+
+
 In api_request your have to change SLP with the crypto of your choice. For example if you want to twitt Bitcoin use BTC or Ethereum you hava to use ETH, you can read the documentation [here](https://coinmarketcap.com/api/documentation/v1/#operation/getV1CryptocurrencyListingsLatest).
 
 
@@ -59,7 +67,7 @@ if you want to read more information [click here](https://schedule.readthedocs.i
 
 ## Change the twitt
 
-If yoy want to change the twitt is very simple, in api_request you are goin to see this.
+If you want to change the twitt is very simple, in api_request you are goin to see this.
 
 ![](twitt.png)
 
@@ -74,3 +82,8 @@ Thanks for read the documentation, this is my first project and I'm very happy w
 email: gutybv@gmail.com
 
 Twitter: Gutybv
+
+# Thank the developer
+If you want you can invite me a coffee to upload more open code
+
+https://www.buymeacoffee.com/gutybv
